@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Menu | Kantin Ellen</title>
+<link rel="icon" type="image/png" href="Asset/icon title web 32px.png">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+<script src="folio.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#menu-text").click(function(){
+				$('#menu-3').toggleClass('menu-open');
+		});
+		$("#nav_icon").click(function(){
+				$('#menu-3').toggleClass('menu-open');
+				});
+	});
+</script>
+</head>
+
+<body>
+<div id="pertama_menu">
+	<header>
+		<img src="Asset/tes logo baru.png" id="logo" alt="logo">
+			<div id="menu">
+		  	<img src="Asset/nav_icon.png" width="35px;" id="nav_icon">
+					<div id="menu-text"><span>Menu</span></div>
+						<div class="konten" id="menu-3">
+							<a href="index.html" class="kolom_3">Home</a>
+							<a href="menu_food.html" class="kolom_3 kolom_3_tengah" target="_blank">Menu</a>
+							<a href="index.html #ketiga" class="kolom_3" onclick="return smoothScroll('ketiga')">Contact</a>
+						</div>
+			</div>
+	</header>
+
+	<div class="clear"></div>
+
+	<div style="margin-top: 50px"></div>
+
+<div class="konten">
+
+		<div class="panah_box panah_kiri" onclick="previous()"> < </div>
+
+			<div id="menu_box">
+
+				<div id="menu_box_kiri">
+					<h3>Judul Makanan</h3>
+					<p class="deskripsi">Deskripsi Makanan</p>
+				</div>
+
+
+				<div id="menu_box_kanan">
+					<img src="Asset/gambar3.jpg" id="target_gambar">
+				</div>
+			</div>
+
+		<div class="panah_box panah_kanan" onclick="next()"> > </div>
+
+		<div class="clear"></div>
+
+	<div id="menu_lain">
+		<img src="Asset/gambar3.jpg" alt=""              onclick="ganti_gambar(this)" class="0">
+		<img src="Asset/gambar1.jpg" alt="" onclick="ganti_gambar(this)" class="1">
+		<img src="Asset/gambar2.jpg" alt=""   onclick="ganti_gambar(this)" class="2">
+	</div>
+	<div class="clear"></div>
+</div>
+<footer>
+	<p>	&copy;2016 By Budi Haryono. All Right Reserved.</p>
+</footer>
+<script src="folio.js"></script>
+</body>
+</html>
